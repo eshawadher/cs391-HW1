@@ -33,7 +33,7 @@ nav{
     max-width: 320px;
     background: #3F4F44;
     padding: 16px 12px;
-    min-height: calc(100vh - 100px);
+    /*min-height: calc(100vh - 100px);*/
 }
 
 nav ul{

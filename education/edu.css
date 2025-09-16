@@ -92,7 +92,7 @@ footer{
     nav{
         flex-basis: 100%;
         max-width: none;
-        min-height: auto;
+        /*min-height: auto;*/
         padding: 10px 12px;
     }
     nav ul{
