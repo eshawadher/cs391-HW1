@@ -2,13 +2,25 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+#bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:  #DCD7C9;
+}
 body {
-    background-color: #DCD7C9;
+    position: relative;
     font-family: Inter, Copperplate, serif;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+#navgroup, main, nav, header, footer {
+    position: relative;
 }
 
 header{
@@ -19,14 +31,15 @@ header{
     background: #2C3930;
     color: #DCD7C9;
     text-align: left;
+
 }
 
-@media (max-width: 750px) {
-    header{
-        text-align: center;
-        padding-inline: 12px;
-    }
-}
+/*@media (max-width: 750px) {*/
+/*    header{*/
+/*        text-align: center;*/
+/*        padding-inline: 12px;*/
+/*    }*/
+/*}*/
 
 nav{
     flex: 0 1 30%;
@@ -62,32 +75,36 @@ main{
     flex: 1 1 70%;
     padding: 20px;
     width: 100%;
+    background: #DCD7C9;
+
 }
 main p{
     margin-bottom: 15px;
 }
-@media (max-width: 999px) {
-    main{
-        flex-basis:100%
-    }
-}
+/*@media (max-width: 999px) {*/
+/*    main{*/
+/*        flex-basis:100%*/
+/*    }*/
+/*}*/
 footer{
     flex: 1 0 100%;
     height: 150px;
-    padding-top: 70px;
     text-align: center;
     background:#2C3930;
     color: #DCD7C9;
+
 }
 #navgroup{
     display: flex;
     flex-direction: row;
     width:100%;
+
 }
 table{
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+
 }
 th, td{
     border: 2px solid #3E3F29;
@@ -101,16 +118,20 @@ th{
 }
 tr, th{
     color: #DCD7C9;
+
 }
 
-@media(max-width:900px){
+@media (max-width: 750px){
     #navgroup{
         display: flex;
         flex-direction: column;
         width: 100%;
+
     }
     main{
         width: 100%;
+        padding: 0px;
+
     }
 
     nav{
@@ -128,6 +149,11 @@ tr, th{
     nav a{
         display: block;
         padding: 2px;
+    }
+    body{
+        height: 100vh;
+        background-color: #2C3930;
+
     }
 }
 

@@ -21,19 +21,11 @@ header{
     text-align: left;
 }
 
-@media (max-width: 750px) {
-    header{
-        text-align: center;
-        padding-inline: 12px;
-    }
-}
-
 nav{
     flex: 0 1 30%;
     max-width: 320px;
     background: #3F4F44;
-    padding: 16px 12px;
-    min-height: calc(100vh - 100px);
+    padding: 4px 6px;
 }
 
 nav ul{
@@ -42,12 +34,12 @@ nav ul{
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 2px;
 }
 
 nav a{
     display: block;
-    padding: 12px 14px;
+    padding: 4px 6px;
     border: 3px solid #DCD7C9;
     border-radius: 0px;
     background-color: #2C3930;
@@ -65,11 +57,16 @@ main{
 main p{
     margin-bottom: 15px;
 }
-@media (max-width: 999px) {
-    main{
-        flex-basis:100%
-    }
+main ul{
+    margin-bottom: 40px;
 }
+
+main li {
+    border-left: 3px solid #2C3930;
+    padding-left: 12px;
+    margin-bottom: 8px;
+}
+
 footer{
     flex: 1 0 100%;
     height: 150px;
@@ -83,8 +80,6 @@ footer{
     nav{
         flex-basis: 100%;
         max-width: none;
-        /*min-height: auto;*/
-        padding: 10px 12px;
     }
     nav ul{
         flex-direction: row;
