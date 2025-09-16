@@ -79,7 +79,11 @@ footer{
     background:#2C3930;
     color: #DCD7C9;
 }
-
+#navgroup{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
 table{
     width: 100%;
     border-collapse: collapse;
@@ -100,17 +104,30 @@ tr, th{
 }
 
 @media(max-width:750px){
+    #navgroup{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+
     nav{
-        flex-basis: 100%;
-        max-width: none;
-        min-height: auto;
-        padding: 10px 12px;
+        display: flex;
+        flex-direction: row;
+        min-width: 100%;
+
     }
     nav ul{
+        width: 100%;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        justify-content: space-around;
+
+    }
+    nav a{
+        display: block;
+        padding: 2px;
     }
 }
 
