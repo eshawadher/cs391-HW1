@@ -103,7 +103,7 @@ tr, th{
     color: #DCD7C9;
 }
 
-@media(max-width:750px){
+@media(max-width:900px){
     #navgroup{
         display: flex;
         flex-direction: column;
