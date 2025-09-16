@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Home | Esha's Resume</title>
-        <link rel="stylesheet" href="projects.css" type="text/css">
-    </head>
-    <body>
-        <header>
-            <h1> Projects</h1>
-            <p> Here are some of my current projects!</p>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Esha's Resume</title>
+    <link rel="stylesheet" href="projects.css" type="text/css">
+</head>
+<body>
+<div id="page-wrapper">
+    <header>
+        <h1> Projects</h1>
+        <p> Here are some of my current projects!</p>
+    </header>
+    <div class="container">
         <nav>
             <ul>
-                <li><a href="../index.html"> Home</a> </li>
-                <li><a href="../exp/exp.html"> Experiences</a> </li>
-                <li><a href="../education/edu.html"> Education</a> </li>
-                <li><a href="../skills/skills.html"> Skills</a> </li>
-                <li><a href="../projects/projects.html"> Projects</a> </li>
-                <li><a href="../ref/ref.html"> References</a> </li>
+                <li><a href="../index.html"> Home</a></li>
+                <li><a href="../exp/exp.html"> Experiences</a></li>
+                <li><a href="../education/edu.html"> Education</a></li>
+                <li><a href="../skills/skills.html"> Skills</a></li>
+                <li><a href="../projects/projects.html"> Projects</a></li>
+                <li><a href="../ref/ref.html"> References</a></li>
 
             </ul>
         </nav>
         <main>
             <p><i><b>File Backup and Restore</b></i></p>
-                <ul>
-                    <li>Developed a program in Java to back up and restore files or directories,
-                        including file integrity checks using hash functions, and implemented
-                        recursive directory traversal, error handling, and logging for tracking operations.</li>
-                </ul>
+            <ul>
+                <li>Developed a program in Java to back up and restore files or directories,
+                    including file integrity checks using hash functions, and implemented
+                    recursive directory traversal, error handling, and logging for tracking operations.
+                </li>
+            </ul>
             <p><i><b>Enhanced Fibonacci Program (Java)</b></i></p>
-                <ul>
-                    <li>Developed a dynamic Fibonacci sequence calculator featuring iterative,
-                        recursive, memoized, and dynamic programming implementations.
-                        Optimized for performance using memoization and BigInteger for large inputs.</li>
-                    <li>Designed a CLI interface for user interaction and implemented multithreading
-                        for concurrent execution. Benchmarked and compared algorithmic efficiency
-                        across different approaches.</li>
-                </ul>
+            <ul>
+                <li>Developed a dynamic Fibonacci sequence calculator featuring iterative,
+                    recursive, memoized, and dynamic programming implementations.
+                    Optimized for performance using memoization and BigInteger for large inputs.
+                </li>
+                <li>Designed a CLI interface for user interaction and implemented multithreading
+                    for concurrent execution. Benchmarked and compared algorithmic efficiency
+                    across different approaches.
+                </li>
+            </ul>
             <p><i><b>Text Model Program</b></i></p>
-                <ul>
-                    <li>Created a text analysis and classification tool using Python, leveraging feature
-                        extraction techniques and similarity scores to categorize documents effectively.</li>
-                </ul>
+            <ul>
+                <li>Created a text analysis and classification tool using Python, leveraging feature
+                    extraction techniques and similarity scores to categorize documents effectively.
+                </li>
+            </ul>
             <p><i><b>Air Quality Index App</b></i></p>
-                <ul>
-                    <li>Developed a mobile application that leverages an Air Quality API to provide real-time
-                        air quality index (AQI) data for user-specified locations.</li>
-                    <li>Implemented features such as location-based AQI retrieval, historical data visualization,
-                        and health recommendations based on AQI levels.</li>
-                </ul>
+            <ul>
+                <li>Developed a mobile application that leverages an Air Quality API to provide real-time
+                    air quality index (AQI) data for user-specified locations.
+                </li>
+                <li>Implemented features such as location-based AQI retrieval, historical data visualization,
+                    and health recommendations based on AQI levels.
+                </li>
+            </ul>
             <p><i><b>Binary Calculator</b></i></p>
-                <ul>
-                    <li>Designed and implemented a binary calculator using X86 Assembly, capable of performing
-                        arithmetic operations</li>
-                    <li>Developed logic to handle binary conversions, overflow detection, and efficient memory usage
-                        for real-time calculations.</li>
-                </ul>
+            <ul>
+                <li>Designed and implemented a binary calculator using X86 Assembly, capable of performing
+                    arithmetic operations
+                </li>
+                <li>Developed logic to handle binary conversions, overflow detection, and efficient memory usage
+                    for real-time calculations.
+                </li>
+            </ul>
             <div class="calc">
                 <div class="keys">
-                    <label for= "first number"> First Number: </label><input type="text" id="first_number" placeholder="Enter First Number">
-                    <label for= "second number"> Second Number: </label><input type="text" id="second_number" placeholder="Enter Second Number">
+                    <label for="first number"> First Number: </label><input type="text" id="first_number"
+                                                                            placeholder="Enter First Number">
+                    <label for="second number"> Second Number: </label><input type="text" id="second_number"
+                                                                              placeholder="Enter Second Number">
                     <div class="row">
                         <button onclick="addition()">+</button>
                         <button onclick="subtraction()">-</button>
@@ -70,15 +82,17 @@
                         <button onclick="power()">power</button>
                         <button onclick="clearAll()">clear</button>
                     </div>
-                    <h3 id= "output"></h3>
+                    <h3 id="output"></h3>
                 </div>
                 <script src="../index.js"></script>
             </div>
         </main>
-        <footer>
-            <p>All rights reserved &#169;
-                <a href="credits.html">Credits</a>
-            </p>
-        </footer>
-    </body>
+    </div>
+    <footer>
+        <p>All rights reserved &#169;
+            <a href="credits.html">Credits</a>
+        </p>
+    </footer>
+</div>
+</body>
 </html>

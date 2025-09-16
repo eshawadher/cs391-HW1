@@ -6,13 +6,13 @@
 body {
     background-color: #DCD7C9;
     font-family: Inter, Copperplate, serif;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
 }
-
+#page-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 header{
-    flex: 1 0 100%;
     height: 150px;
     padding-top: 45px;
     padding-inline: 24px;
@@ -22,37 +22,45 @@ header{
 }
 
 nav{
-    flex: 0 1 30%;
-    max-width: 320px;
+    flex: 0 0 320px;
+    max-width: 360px;
     background: #3F4F44;
-    padding: 4px 6px;
+    padding: 16px;
+    border-right: 6px solid
 }
 
 nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+nav li{
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    padding-bottom: 30px;
 }
 
 nav a{
-    display: block;
-    padding: 4px 6px;
-    border: 3px solid #DCD7C9;
-    border-radius: 0px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
     background-color: #2C3930;
+    border: 3px solid;
+    border-radius: 8px;
     color: #DCD7C9;
     font-weight: 700;
-    text-align: center;
     text-decoration: none;
 }
 
 main{
-    flex: 1 1 70%;
+    flex: 1 1 auto;
+    min-width: 0;
     padding: 20px;
-    width: 100%;
+    width: auto;
 }
 main p{
     margin-bottom: 15px;
@@ -66,28 +74,40 @@ main li {
     padding-left: 12px;
     margin-bottom: 8px;
 }
+
 footer{
-    flex: 1 0 100%;
     height: 150px;
     padding-top: 70px;
     text-align: center;
     background:#2C3930;
     color: #DCD7C9;
 }
-
-@media(max-width:750px){
-    nav{
-        flex-basis: 100%;
-        max-width: 100%;
-    }
-    nav ul{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1;
 }
 
+@media(max-width:750px){
+    .container{
+        flex-direction: column;
+    }
+    nav{
+        flex: 0 0 auto;
+        max-width: none;
+    }
 
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav li{
+        flex: 1 1 0;
+    }
 
-
+    nav a{
+        padding: 10px 8px;
+    }
+}
