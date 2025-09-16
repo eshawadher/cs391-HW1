@@ -88,18 +88,7 @@ footer{
         justify-content: center;
         gap: 10px;
     }
-    /*nav{
-        flex-basis: 100%;
-        max-width: none;
-        min-height: auto;
-        padding: 10px 12px;
-    }
-    nav ul{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }*/
+
 }
 .calc {
     background-color: #D9E9CF;

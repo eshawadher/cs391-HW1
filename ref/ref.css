@@ -2,25 +2,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-#bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background:  #DCD7C9;
-}
+
 body {
-    position: relative;
+    background-color: #DCD7C9;
     font-family: Inter, Copperplate, serif;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-}
-#navgroup, main, nav, header, footer {
-    position: relative;
+    align-items: flex-start;
 }
 
 header{
@@ -31,22 +19,13 @@ header{
     background: #2C3930;
     color: #DCD7C9;
     text-align: left;
-
 }
-
-/*@media (max-width: 750px) {*/
-/*    header{*/
-/*        text-align: center;*/
-/*        padding-inline: 12px;*/
-/*    }*/
-/*}*/
 
 nav{
     flex: 0 1 30%;
     max-width: 320px;
     background: #3F4F44;
-    padding: 16px 12px;
-    /*min-height: calc(100vh - 100px);*/
+    padding: 4px 6px;
 }
 
 nav ul{
@@ -55,13 +34,12 @@ nav ul{
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 2px;
 }
-
 
 nav a{
     display: block;
-    padding: 12px 14px;
+    padding: 4px 6px;
     border: 3px solid #DCD7C9;
     border-radius: 0px;
     background-color: #2C3930;
@@ -75,85 +53,39 @@ main{
     flex: 1 1 70%;
     padding: 20px;
     width: 100%;
-    background: #DCD7C9;
-
 }
 main p{
     margin-bottom: 15px;
 }
-/*@media (max-width: 999px) {*/
-/*    main{*/
-/*        flex-basis:100%*/
-/*    }*/
-/*}*/
+main ul{
+    margin-bottom: 40px;
+}
+
+main li {
+    border-left: 3px solid #2C3930;
+    padding-left: 12px;
+    margin-bottom: 8px;
+}
+
 footer{
     flex: 1 0 100%;
     height: 150px;
+    padding-top: 70px;
     text-align: center;
     background:#2C3930;
     color: #DCD7C9;
-
-}
-#navgroup{
-    display: flex;
-    flex-direction: row;
-    width:100%;
-
-}
-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-
-}
-th, td{
-    border: 2px solid #3E3F29;
-    padding: 8px 12px;
-    text-align: center;
-    color: #2C3930;
-}
-th{
-    background-color: #2C3930;
-    color: #111;
-}
-tr, th{
-    color: #DCD7C9;
-
 }
 
-@media (max-width: 750px){
-    #navgroup{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
-    }
-    main{
-        width: 100%;
-        padding: 0px;
-
-    }
-
+@media(max-width:750px){
     nav{
-        display: flex;
-        flex-direction: row;
-        min-width: 100%;
-
+        flex-basis: 100%;
+        max-width: 100%;
     }
     nav ul{
-        width: 100%;
         flex-direction: row;
-        justify-content: space-around;
-
-    }
-    nav a{
-        display: block;
-        padding: 2px;
-    }
-    body{
-        height: 100vh;
-        background-color: #2C3930;
-
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 }
 

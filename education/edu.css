@@ -10,6 +10,7 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
 }
+/*https://www.w3schools.com/cssref/css3_pr_flex-wrap.php*/
 
 header{
     flex: 1 0 100%;
